@@ -1,0 +1,14 @@
+# Install lm-sensors
+sudo apt install lm-sensors
+
+# add the following line to crontab
+
+# Notify every minute if temp > 60 or temp > 70
+* * * * * yourUserName PATH_TO_SENSORS_NOTIFY/mensaje.sh
+
+# Notify every N minute...
+*/N * * * * yourUserName PATH_TO_SENSORS_NOTIFY/mensaje.sh
+
+# Replace N with a number between 1 and 59
+
+
